@@ -11,10 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('destinations', function (Blueprint $table) {
+        Schema::create('tache', function (Blueprint $table) {
             $table->id();
-            $table->string('depart');
-            $table->string('arrivee');
+            $table ->string('libele')->nullable();
             $table->timestamps();
         });
     }
@@ -24,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('destinations');
+        Schema::dropIfExists('tache');
     }
 };
