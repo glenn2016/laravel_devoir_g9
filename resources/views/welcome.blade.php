@@ -13,8 +13,6 @@
     </head>
 
 
-
-
     <body class="antialiased">
         <div class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
 
@@ -61,7 +59,7 @@
         <header>
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light p-0">
-                    <h1><a class="navbar-brand" href="index.html">TaskEasy
+                    <h1><a class="navbar-brand" href="http://127.0.0.1:8000/">TaskEasy
 
                         </a></h1>
                     <button class="navbar-toggler ml-lg-auto ml-sm-5 bg-light" type="button" data-toggle="collapse"
@@ -72,7 +70,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="ml-lg-5 navbar-nav mr-lg-auto">
                             <li class="nav-item active  mr-lg-4 mt-lg-0 mt-sm-4 mt-3">
-                                <a href="index.html">Accueil</a>
+                                <a href="http://127.0.0.1:8000/">Accueil</a>
                             </li>
                             <li class="nav-item  mr-lg-4 mt-lg-0 mt-sm-4 mt-3">
                                 <a href="about.html">A propos </a>
@@ -88,7 +86,7 @@
                                 </div>
                             </li>
                             <li class="nav-item mr-lg-4 my-lg-0 mb-sm-4 mb-3">
-                                <a href="contact.html">contact</a>
+                                <a href="http://127.0.0.1:8000/user/contact">contact</a>
                             </li>
                         </ul>
                           @if (Route::has('login'))
@@ -115,10 +113,21 @@
                     @endauth
                     @endif
                     </div>
+
+                    <div class="languages">&nbsp
+                        <a href="local/fr" > <img src="client/images/flag/Flag-Senegal.png" width="20"> </a>&nbsp
+                        <a href="local/en"> <img src="client/images/flag/Flag_of_the_United_States.png" width="25"></a>&nbsp
+                        <a href="local/ar"><img src="client/images/flag/Flag-Saudi-Arabia.webp" width="20"></a>&nbsp
+                    </div>
+
                 </nav>
             </div>
         </header>
         <!-- //header -->
+
+
+
+
         <div class="slider">
             <ul class="rslides" id="slider">
                 <li>
@@ -620,7 +629,8 @@
 
 
                         <div class="right-w3l">
-                            <input type="submit" class="form-control bg-theme" value=" {{ __('Log in') }}" >
+                        <i class="fa-brands fa-google" style="color: black;"></i>
+                            <input type="submit" class="form-control bg-theme" value=" {{ __('Connexion') }}" >
 
                         </div>
                         <br>
@@ -628,7 +638,7 @@
 
                         <div class="right-w3l">
                             <a href="/auth/google/redirect" svg class="w-4 h-4 mr-2 -ml-1" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512"><path fill="currentColor" d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"></path></svg>
-                                        Sign in Google
+                                        Google
                                 </a>
                         </div>
 

@@ -36,4 +36,6 @@ return [
         'client_secret' => env('GOOGLE_CLIENT_SECRET'),
         'redirect' => '/auth/google/callback-url',
     ],
+
+    
 ];

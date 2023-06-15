@@ -11,10 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('tache', function (Blueprint $table) {
-            $table->id();
-            $table ->string('libele')->nullable();
-            $table->timestamps();
+        Schema::table('projets', function (Blueprint $table) {
+            //
+
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 
@@ -23,6 +24,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('tache');
+        Schema::table('projets', function (Blueprint $table) {
+            //
+        });
     }
 };

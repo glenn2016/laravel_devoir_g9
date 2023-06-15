@@ -12,5 +12,10 @@ class UserDashbordController extends Controller
 
         return ('user/user');
     }
+
+    public function form_add()
+    {
+        return view('addtask');
+    }
 }
 

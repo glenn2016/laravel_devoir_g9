@@ -9,13 +9,13 @@ class MenuController extends Controller
     
     public function menue(){
 
-        return view('about');
+        return view('user/contact');
 
     }
 
     public function menue1(){
 
-        return view('Passager');
+        return view('Menue');
 
     }
 

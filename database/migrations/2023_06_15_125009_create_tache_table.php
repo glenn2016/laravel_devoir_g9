@@ -11,12 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('projets', function (Blueprint $table) {
+        Schema::create('tache', function (Blueprint $table) {
             $table->id();
-            $table ->string('libelle')->nullable();
-            $table ->string('description')->nullable();
-            $table ->date('datedebut')->nullable();
-            $table ->date('datefin')->nullable();
+            $table ->string('libele')->nullable();
+            $table->unsignedBigInteger('projet_id');
+            $table->foreign('projet_id')->references('id')->on('projetencours');
             $table->timestamps();
         });
     }
@@ -26,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('projets');
+        Schema::dropIfExists('tache');
     }
 };

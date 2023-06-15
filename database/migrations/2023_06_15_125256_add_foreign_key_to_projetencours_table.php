@@ -11,10 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('projets', function (Blueprint $table) {
-            $table->unsignedBigInteger('users_id');
-            $table->foreign('users_id')->references('id')->on('users');
+        Schema::table('projetencours', function (Blueprint $table) {
             //
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+  
         });
     }
 
@@ -23,7 +24,7 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('projets', function (Blueprint $table) {
+        Schema::table('projetencours', function (Blueprint $table) {
             //
         });
     }
