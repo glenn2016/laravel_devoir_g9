@@ -13,9 +13,12 @@ return new class extends Migration
     {
         Schema::create('projetencours', function (Blueprint $table) {
             $table->id();
+<<<<<<< HEAD
             $table ->string('libelle')->nullable();
             $table ->string('description')->nullable();
             $table ->date('datedebut')->nullable();
+=======
+>>>>>>> 1a44ab56fe4a021dd1b0a2706e2d4a497b9f7ec4
             $table->timestamps();
         });
     }

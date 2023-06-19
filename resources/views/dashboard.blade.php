@@ -1,7 +1,10 @@
 @extends("layouts.main")
 @section('content')
+<<<<<<< HEAD
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
+=======
+>>>>>>> 1a44ab56fe4a021dd1b0a2706e2d4a497b9f7ec4
   <!--  Row 1 -->
   <div class="row">
     <div class="col-lg-8 d-flex align-items-strech">
@@ -9,9 +12,24 @@
         <div class="card-body">
           <div class="d-sm-flex d-block align-items-center justify-content-between mb-9">
             <div class="mb-3 mb-sm-0">
+<<<<<<< HEAD
               <h5 class="card-title fw-semibold">Pourcentages de progest </h5>
             </div>
 
+=======
+              <h5 class="card-title fw-semibold">Mois de vos Projets</h5>
+            </div>
+          <div>
+            <select class="form-select">
+              <option value="1">Juin 2023</option>
+              <option value="2">Mai 2023</option>
+              <option value="3">Avril 2023</option>
+              <option value="4">Mars 2023</option>
+              <option value="5">Fevrier 2023</option>
+              <option value="6">Janvier 2023</option>
+            </select>
+          </div>
+>>>>>>> 1a44ab56fe4a021dd1b0a2706e2d4a497b9f7ec4
         </div>
         <div id="chart"></div>
       </div>

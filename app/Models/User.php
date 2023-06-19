@@ -32,6 +32,7 @@ class User extends Authenticatable implements MustVerifyEmail
         return $this->hasMany(Projet::class);
     }
 
+<<<<<<< HEAD
     public function projetencours(){
         return $this->hasMany(Projetencours::class);
     }
@@ -40,6 +41,8 @@ class User extends Authenticatable implements MustVerifyEmail
         return $this->hasMany(Projets_termines::class);
     }
 
+=======
+>>>>>>> 1a44ab56fe4a021dd1b0a2706e2d4a497b9f7ec4
     /**
      * The attributes that should be hidden for serialization.
      *

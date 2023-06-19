@@ -15,6 +15,7 @@ class Projetencours extends Model
         'datedebut',
         'datefin',
     ];
+<<<<<<< HEAD
 
     public function user()
     {
@@ -25,4 +26,6 @@ class Projetencours extends Model
     {
         return $this->hasMany(Projetencours::class, 'user_id');
     }
+=======
+>>>>>>> 1a44ab56fe4a021dd1b0a2706e2d4a497b9f7ec4
 }

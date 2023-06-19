@@ -9,12 +9,20 @@
 			@endif	
             <table class="table table-striped">
                 <thead>
+<<<<<<< HEAD
                     <!-- <tr>
+=======
+                    <tr>
+>>>>>>> 1a44ab56fe4a021dd1b0a2706e2d4a497b9f7ec4
                         <th>Libellé</th>
                         <th>Description</th>
                         <th>Date de début</th>
                         <th>Actions</th>
+<<<<<<< HEAD
                     </tr> -->
+=======
+                    </tr>
+>>>>>>> 1a44ab56fe4a021dd1b0a2706e2d4a497b9f7ec4
                 </thead>
                 <tbody>
                     @foreach($projets as $projet)
@@ -23,6 +31,7 @@
                             <td>{{ $projet->description }}</td>
                             <td>{{ $projet->datedebut }}</td>
                             <td>
+<<<<<<< HEAD
                                 <div class="d-flex">
                                     <form method="POST" action="{{ route('delete_task', ['id' => $projet->id]) }}">
                                         @csrf
@@ -35,12 +44,26 @@
                                     <form method="POST" action="{{ route('begin_task', ['id' => $projet->id]) }}">
                                         @csrf
                                         <button type="submit" class="btn btn-primary bg bg-primary">Commenencer</button>
+=======
+                                <div class="d-flex justify-content-between">
+                                    <form method="POST" action="{{ route('delete_task', ['id' => $projet]) }}">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="btn btn-danger bg bg-danger" onclick="return confirm('Êtes-vous sûr de vouloir supprimer ce projet ?')">Supprimer</button>
+                                    </form>
+                                    <form method="POST" action="{{ route('begin_task', ['id' => $projet->id]) }}">
+                                        @csrf
+                                        <button type="submit" class="btn btn-primary bg bg-primary">Commencer</button>
+>>>>>>> 1a44ab56fe4a021dd1b0a2706e2d4a497b9f7ec4
                                     </form>
                                 </div>
                             </td>
                         </tr>
+<<<<<<< HEAD
                         <!-- Modal Modification -->
 
+=======
+>>>>>>> 1a44ab56fe4a021dd1b0a2706e2d4a497b9f7ec4
                     @endforeach
                 </tbody>
             </table>
@@ -55,6 +78,7 @@
             </div>
     @endisset
 
+<<<<<<< HEAD
                             <!-- Pop-up modal -->
                             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-sm">
@@ -97,6 +121,8 @@
                             </div>
                         </div>
 
+=======
+>>>>>>> 1a44ab56fe4a021dd1b0a2706e2d4a497b9f7ec4
     <script>
         // Récupérer la div d'alerte
         const alertDiv = document.getElementById('myAlert');
@@ -108,6 +134,7 @@
         setTimeout(function() {
         alertDiv.style.display = 'none';
         }, 5000);
+<<<<<<< HEAD
 /*
         //Recuperration de l'id du projet
         document.addEventListener('DOMContentLoaded', function() {
@@ -142,4 +169,8 @@
 
     
 
+=======
+    </script>
+
+>>>>>>> 1a44ab56fe4a021dd1b0a2706e2d4a497b9f7ec4
 @endsection

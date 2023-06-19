@@ -41,6 +41,7 @@ Route::get('/auth/google/callback-url',[GoogleController::class,'callback']);
 
 
 
+<<<<<<< HEAD
 Route::get('wp-admin/Menue',[MenuController::class, 'Menue1']);
 Route::get('wp-admin/Menuef',[MenuController::class, 'Menuef']);
 
@@ -50,6 +51,14 @@ Route::get('user/contact',[MenuController::class, 'menue']);
 Route::get('user/user',[UserDashbordController::class, 'UserDashbord']);
 Route::get('/addtask', [UserDashbordController::class, 'form_add']);
 Route::get('formPayement',[MenuController::class, 'payement']);
+=======
+Route::get('Menue',[MenuController::class, 'Menue1']);
+Route::get('Menuef',[MenuController::class, 'Menuef']);
+Route::get('user/contact',[MenuController::class, 'menue']);
+Route::get('user/user',[UserDashbordController::class, 'UserDashbord']);
+Route::get('/addtask', [UserDashbordController::class, 'form_add']);
+
+>>>>>>> 1a44ab56fe4a021dd1b0a2706e2d4a497b9f7ec4
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -58,6 +67,16 @@ Route::middleware('auth')->group(function () {
 });
 
 
+<<<<<<< HEAD
+=======
+
+Route::get('/listtask', [App\Http\Controllers\ProjetController::class, 'form_listtask']);
+
+Route::post('/addtask_traitement', [ProjetController::class, 'traitement_add']);
+Route::post('/begintask/{id}', 'App\Http\Controllers\ProjetController@begintask')->name('begin_task');
+Route::delete('/deletetask/{id}', 'App\Http\Controllers\ProjetController@destroy')->name('delete_task');
+
+>>>>>>> 1a44ab56fe4a021dd1b0a2706e2d4a497b9f7ec4
 /*
 /*
 Route::middleware(['auth', 'role:admin'])->group(function() {
@@ -67,7 +86,13 @@ Route::middleware(['auth', 'role:admin'])->group(function() {
     
 });
 */
+<<<<<<< HEAD
 //route projet
+=======
+//Langue route
+
+//Route::get("locale/{langue}",[LangueController::class,"setLangue"]);
+>>>>>>> 1a44ab56fe4a021dd1b0a2706e2d4a497b9f7ec4
 
 
 

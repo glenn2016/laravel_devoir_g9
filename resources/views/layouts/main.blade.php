@@ -18,7 +18,11 @@
       <!-- Sidebar scroll-->
       <div>
         <div class="brand-logo d-flex align-items-center justify-content-between">
+<<<<<<< HEAD
           <a href="http://127.0.0.1:8000/" class="text-nowrap logo-img">
+=======
+          <a href="./index.blade.php" class="text-nowrap logo-img">
+>>>>>>> 1a44ab56fe4a021dd1b0a2706e2d4a497b9f7ec4
             <img src="src/assets/images/logos/logotaskeasy.png" width="100" alt="" />
           </a>
           <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
@@ -61,7 +65,11 @@
               </a>
             </li>
             <li class="sidebar-item">
+<<<<<<< HEAD
               <a class="sidebar-link" href="/taskencours" aria-expanded="false">
+=======
+              <a class="sidebar-link" href="./ui-forms.blade.php" aria-expanded="false">
+>>>>>>> 1a44ab56fe4a021dd1b0a2706e2d4a497b9f7ec4
                 <span>
                   <i class="ti ti-cards"></i>
                 </span>
@@ -69,7 +77,11 @@
               </a>
             </li>
             <li class="sidebar-item">
+<<<<<<< HEAD
               <a class="sidebar-link" href="./finishtask" aria-expanded="false">
+=======
+              <a class="sidebar-link" href="./ui-typography.blade.php" aria-expanded="false">
+>>>>>>> 1a44ab56fe4a021dd1b0a2706e2d4a497b9f7ec4
                 <span>
                   <i class="ti ti-alert-circle"></i>
                 </span>
@@ -81,11 +93,19 @@
               <span class="hide-menu">Collaborations</span>
             </li>
             <li class="sidebar-item">
+<<<<<<< HEAD
               <a class="sidebar-link" href="http://127.0.0.1:8000/chats" target="_blank" aria-expanded="false">
                 <span>
                   <i class="ti ti-user-plus"></i>
                 </span>
                 <span class="hide-menu">Chat membres</span>
+=======
+              <a class="sidebar-link" href="./authentication-register.blade.php" aria-expanded="false">
+                <span>
+                  <i class="ti ti-user-plus"></i>
+                </span>
+                <span class="hide-menu">Ajouter des membres</span>
+>>>>>>> 1a44ab56fe4a021dd1b0a2706e2d4a497b9f7ec4
               </a>
             </li>
           </ul>
@@ -93,7 +113,11 @@
             <div class="d-flex">
               <div class="unlimited-access-title me-3">
                 <h6 class="fw-semibold fs-4 mb-6 text-dark w-85">TaskEasy Pro</h6>
+<<<<<<< HEAD
                 <a href="http://127.0.0.1:8000/versionpro#" target="_blank" class="btn btn-primary fs-2 fw-semibold lh-sm ">disponible</a>
+=======
+                <a href="/welcome" target="_blank" class="btn btn-primary fs-2 fw-semibold lh-sm disabled">indisponible</a>
+>>>>>>> 1a44ab56fe4a021dd1b0a2706e2d4a497b9f7ec4
               </div>
               <div class="unlimited-access-img">
                 <img src="src/assets/images/backgrounds/rocket.png" alt="" class="img-fluid">

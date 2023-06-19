@@ -6,7 +6,10 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Projet;
 use App\Models\Projetencours;
+<<<<<<< HEAD
 use App\Models\Projets_termines;
+=======
+>>>>>>> 1a44ab56fe4a021dd1b0a2706e2d4a497b9f7ec4
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 
@@ -47,6 +50,7 @@ class ProjetController extends Controller
         return redirect()->back()->with('success', 'Projet supprimé avec succès');
     }
 
+<<<<<<< HEAD
     public function destroy2($id)
     {
         $element = Projetencours::findOrFail($id);
@@ -57,10 +61,15 @@ class ProjetController extends Controller
     public function begintask($id)
     {
         $user = Auth::user();
+=======
+    public function begintask($id)
+    {
+>>>>>>> 1a44ab56fe4a021dd1b0a2706e2d4a497b9f7ec4
         $projet = Projet::find($id);
 
         // Vérifiez si le projet existe
         if ($projet) {
+<<<<<<< HEAD
             // Créez un nouvel enregistrement dans la table "projetencours"
             $projetEncours = new Projetencours();
             $projetEncours->user_id = $user->id;
@@ -69,6 +78,15 @@ class ProjetController extends Controller
             $projetEncours->description = $projet->description;
             $projetEncours->datedebut = $projet->datedebut;
             $projetEncours->save();
+=======
+            // Créez un nouvel enregistrement dans la table "projet_en_cours"
+            projetencours::create([
+                'id' => $projet->id,
+                'libelle' => $projet->libelle,
+                'description' => $projet->description,
+                'datedebut' => $projet->datedebut,
+            ]);
+>>>>>>> 1a44ab56fe4a021dd1b0a2706e2d4a497b9f7ec4
 
             // Supprimez le projet de la table "projets"
             $projet->delete();
@@ -77,6 +95,7 @@ class ProjetController extends Controller
         // Redirigez vers la page d'origine ou une autre page appropriée
         return redirect()->back();
     }
+<<<<<<< HEAD
 
     public function canceltaskencours($id)
     {
@@ -176,4 +195,6 @@ class ProjetController extends Controller
 
         return redirect()->back();
     }
+=======
+>>>>>>> 1a44ab56fe4a021dd1b0a2706e2d4a497b9f7ec4
 }
