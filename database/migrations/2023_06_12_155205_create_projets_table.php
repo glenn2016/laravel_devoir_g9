@@ -13,13 +13,10 @@ return new class extends Migration
     {
         Schema::create('projets', function (Blueprint $table) {
             $table->id();
-            $table ->string('libele')->nullable();
-            $table ->integer('description')->nullable();
-            $table ->integer('etat')->nullable();
-            $table ->date('dateDebut')->nullable();
+            $table ->string('libelle')->nullable();
+            $table ->string('description')->nullable();
+            $table ->date('datedebut')->nullable();
             $table ->date('datefin')->nullable();
-            $table->unsignedBigInteger('tache_id');
-            $table->foreign('tache_id')->references('id')->on('tache');
             $table->timestamps();
         });
     }

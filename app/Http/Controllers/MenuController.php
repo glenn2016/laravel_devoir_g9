@@ -9,15 +9,24 @@ class MenuController extends Controller
     
     public function menue(){
 
-        return view('about');
+        return view('user/contact');
 
     }
 
     public function menue1(){
 
-        return view('Passager');
+        return view('wp-admin/Menuef');
 
     }
+
+    public function pro (){
+        return view('versionpro');
+    }
+
+    public function payement (){
+        return view('formPayement');
+    }
+
 
     
     
